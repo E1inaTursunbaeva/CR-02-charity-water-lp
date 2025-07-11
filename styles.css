@@ -385,16 +385,16 @@ section {
     display: flex;
     flex-direction: row; /* Keep horizontal */
     flex-wrap: nowrap; /* Prevent wrapping to keep it flat */
-    gap: 1rem; /* Much more spacing between links */
-    justify-content: center; /* Center the navigation links */
-    width: 100%; /* Take full width for centering */
-    align-self: center; /* Center the nav-links container itself */
+    gap: 0.4rem; /* Much smaller spacing between links */
+    justify-content: flex-start; /* Push navigation links to the left */
+    width: 100%; /* Take full width */
+    align-self: flex-start; /* Align nav-links container to the left */
   }
   
   .nav-links a {
     margin: 0;
-    font-size: 0.85rem; /* Slightly larger font for better readability */
-    padding: 0.5rem 0.8rem; /* More generous padding */
+    font-size: 0.7rem; /* Much smaller font for compact layout */
+    padding: 0.3rem 0.5rem; /* Smaller padding for compact links */
     border-radius: 4px;
     transition: background-color 0.3s ease;
     white-space: nowrap;
@@ -403,6 +403,11 @@ section {
   
   .nav-links a:hover {
     background-color: rgba(255, 201, 7, 0.1);
+  }
+
+  /* Hide Sign In link on mobile */
+  .nav-links a[href="#sign-in"] {
+    display: none;
   }
 
   /* Hero section mobile optimizations */
