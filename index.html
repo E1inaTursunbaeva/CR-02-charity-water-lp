@@ -7,41 +7,108 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
+    <!-- Navigation Bar: This is the menu at the top of the page -->
+    <header class="navbar">
+        <!-- Logo on the left -->
+        <div class="logo">
+            <!-- Replace text with logo image -->
+            <img src="img/cw_logo-2.png" alt="charity: water logo" style="height:28px;">
+        </div>
+        <!-- Navigation links on the right -->
+        <nav class="nav-links">
+            <a href="#">Take Action</a>
+            <a href="#">About us</a>
+            <a href="#">Why Water?</a>
+            <a href="#">Sign In</a>
+        </nav>
+    </header>
+
+    <!-- New Hero Section: Shows a call to action with a headline and button -->
+    <main class="hero">
+        <div class="hero-image">
+            <div class="hero-content">
+                <h1>Donate A Glass.<br>See the Impact.</h1>
+                <p>
+                    The cost of one latte can help fund clean water for someone in need.
+                    100% of your donation goes to the field, and you’ll see exactly where it goes.
+                </p>
+                <a href="#" class="cta-button">Donate Now</a>
+            </div>
+        </div>
+    </main>
 
     <!-- Story Section: This tells the story of the nonprofit -->
     <section class="story">
-        <h2>Our Story</h2>
+        <h1>Our Mission</h1>
         <p>
-         
+            charity: water began with a simple mission: to bring clean and safe drinking water to people in need around the world. Every day, millions of people walk miles just to collect water—often dirty and unsafe. We believe that access to clean water changes everything: it improves health, gives children more time for school, and helps communities thrive. With the help of supporters like you, we fund sustainable water projects and share the impact with every donor. Together, we can end the water crisis.
+        </p>
     </section>
 
     <!-- Real-World Impact Story Section -->
     <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
+        <div class="impact-split-container">
+            <!-- Left: Wide image -->
+            <div class="impact-img-side">
+                <img src="img/ethiopia.jpeg" alt="A smiling child with clean water" class="impact-img-vertical" />
+            </div>
+            <!-- Right: Heading and story -->
+            <div class="impact-text-side">
+                <h1 class="impact-title" style="white-space: nowrap;">Real Stories: Meet Amina</h1>
+                <div class="impact-story-card">
+                    <p>
+                        Before clean water reached her village, Amina spent hours each day walking to collect water that was often unsafe. Now, thanks to supporters like you, she can go to school, play with friends, and dream about her future. Her family is healthier, and hope has returned to her community. Your kindness truly changes lives.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
+    <!-- Statistics Section: Highlights key impact numbers -->
+    <section class="stats">
+        <h1>Our Impact in Numbers</h1>
+        <div class="stats-container">
+            <!-- Stat 1: Tanzania image as background -->
+            <div class="stat-item stat-bg-tanzania">
+                <h2 class="stat-number">20.3 million+</h2>
+                <p class="stat-label">people now have access to clean water</p>
+            </div>
+            <!-- Stat 2: Water can image as background -->
+            <div class="stat-item stat-bg-watercan">
+                <h2 class="stat-number">186,000+</h2>
+                <p class="stat-label">water projects funded</p>
+            </div>
+            <!-- Stat 3: Uganda image as background -->
+            <div class="stat-item stat-bg-uganda">
+                <h2 class="stat-number">29</h2>
+                <p class="stat-label">countries reached</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section: Encourages users to donate -->
+    <section class="donation-section">
+        <h1>Make a Difference Today</h1>
+        <p>
+            Your donation can provide clean water to families in need. Every dollar makes a direct impact, 
+            and 100% of your donation goes to the field. Join thousands of supporters who are helping 
+            end the water crisis, one community at a time.
+        </p>
         <a href="#" class="donate-button">Donate Now</a>
     </section>
+
+    <!-- Footer Section: This contains contact information and social media links -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://www.facebook.com/charitywater/">Facebook</a>
+            <a href="https://x.com/charitywater?lang=mr">Twitter</a>
+            <a href="https://www.instagram.com/charitywater/?hl=en">Instagram</a>
+        </div>
+        <p>© 2023 charity: water. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
+
