@@ -466,8 +466,10 @@ section {
   
   .impact-story-card {
     font-size: 1em;
-    padding: 20px 15px;
-    width: 100%;
+    padding: 20px 25px; /* Increased side padding for better mobile readability */
+    width: calc(100% - 50px); /* Account for increased padding */
+    max-width: 85%; /* Limit width to prevent text from going to edges */
+    margin: 0 auto; /* Center the text block */
   }
 
   /* Stats section mobile */
@@ -1067,7 +1069,9 @@ body, p, .impact-story-card, .story p, .stat-label, .hero-content p {
   }
   .impact-story-card {
     font-size: 1em;
-    padding: 14px 8px;
+    padding: 20px 30px; /* More generous padding for very small screens */
+    margin: 0 20px; /* Add side margins to prevent edge-to-edge text */
+    max-width: calc(100% - 40px); /* Ensure text stays within comfortable bounds */
   }
 }
 
